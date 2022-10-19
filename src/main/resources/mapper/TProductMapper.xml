@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mpx.mapper.TProductMapper">
+
+    <resultMap id="BaseResultMap" type="mpx.domain.TProduct">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="name" column="NAME" jdbcType="VARCHAR"/>
+            <result property="price" column="price" jdbcType="INTEGER"/>
+            <result property="version" column="VERSION" jdbcType="INTEGER"/>
+            <result property="sex" column="sex" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,NAME,price,
+        VERSION,sex
+    </sql>
+</mapper>
